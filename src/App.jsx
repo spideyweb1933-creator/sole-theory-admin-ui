@@ -10,7 +10,6 @@ export default function App() {
 
   return (
     <div>
-      {/* Top bar with Contact Us (left) and Logout (right) */}
       <div className="p-3 flex items-center justify-between bg-neutral-900/60">
         <a
           href="mailto:spideyweb1933@gmail.com"
@@ -19,7 +18,6 @@ export default function App() {
         >
           Contact&nbsp;Us
         </a>
-
         <button
           onClick={() => { logout(); setAuthed(false); }}
           className="px-3 py-2 rounded-xl bg-neutral-800 hover:bg-neutral-700 transition"
@@ -27,9 +25,7 @@ export default function App() {
           Logout
         </button>
       </div>
-
       <AdminPanel />
     </div>
   );
 }
-
